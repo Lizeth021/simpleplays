@@ -1,0 +1,36 @@
+<meta charset="UTF-8"
+<h1>PROGRAMA  CALCULAR PUNTOS DE UN EQUIPO</h1>
+
+<script>
+    function saltolinea() {
+
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+
+        document.write(frase);
+        saltolinea();
+    }
+
+    var victorias = parseInt(prompt("Informe la cantidad de victorias"));
+    var empates = parseInt(prompt("Informe la cantidad de empates"));
+
+    puntosTotal = (victorias * 3) + empates;
+    saltolinea();
+    imprimir(("El total de puntos del equio es: " + puntosTotal));
+
+    if (puntosTotal > 28) {
+    imprimir("EL equipo esta mejor que el año pasado");
+    }
+
+    if (puntosTotal < 28) {
+    imprimir("EL equipo esta peor que el año pasado");
+    }
+
+    if (puntosTotal == 28) {
+    imprimir("EL equipo esta igual que el año pasado");
+    }  
+</script>

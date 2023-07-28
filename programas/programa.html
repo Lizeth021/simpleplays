@@ -1,0 +1,55 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA DE EDADES</h1>
+
+
+<script>
+
+    function saltolinea() {
+        document.write("<br>");
+        document.write("<br>");
+        }
+
+    function imprimir(frase) {
+        document.write(frase)
+    }
+
+    var anho = 2022;
+    
+    imprimir("hola aqui mi programa");
+    saltolinea();
+
+
+    document.write("Lulo tiene: " + (anho-1995) + " años");
+    saltolinea();
+
+    document.write("Mora tiene: " + (anho-2002) + " años");
+    saltolinea();
+
+    document.write("juan tiene: " + (anho-2008) + " años");
+    saltolinea();
+    
+    var anho = 2030;
+    document.write("Lulo tiene: " + (anho-1995) + "años");
+    saltolinea();
+
+    document.write("Mora tiene: " + (anho-2002) + "años");
+    saltolinea();
+
+    document.write("juan tiene: " + (anho-2008) + "años");
+    saltolinea();
+    
+    var edadlulo = 19;
+    var edadmora = 22;
+    var edadjuan = 21;
+    
+    var nombre1 ="lulo";
+    var nombre2 ="mora";
+    var nombre3 ="juan";
+
+    promedio = (edadlulo+edadmora+edadjuan)/3
+
+    document.write("El promedio de las edades de " + nombre1 + ", " + nombre2 + ", " + nombre3 + " es " + Math.round(promedio));
+
+    
+</script>
